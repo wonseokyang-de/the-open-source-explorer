@@ -1,2 +1,2 @@
-# the-open-source-explorer
+# The OpenSource Explorer
 Whenever something piques my interest, I delve into it for fun or to apply what I learn at work.
