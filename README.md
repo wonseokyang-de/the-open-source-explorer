@@ -7,5 +7,7 @@ Whenever something piques my interest, I delve into it for fun or to apply what 
 
 # Open source List:
 1. apache/airflow
+    - providers
+        - amazon/aws
 2. apache/spark
 3. boto/boto3
