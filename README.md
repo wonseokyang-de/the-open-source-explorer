@@ -11,5 +11,5 @@ Whenever something piques my interest, I delve into it for fun or to apply what 
         - amazon/aws
 2. apache-spark
 3. boto
-    3-1. botocore
-    3-2. boto3
+    - botocore
+    - boto3
