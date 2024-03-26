@@ -1,0 +1,122 @@
+================================================================================================
+Char Varchar Write Side Perf w/o Tailing Spaces
+================================================================================================
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 5:                      Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 5                         6314           6378          96          6.3         157.9       1.0X
+write char with length 5                           9041           9108          96          4.4         226.0       0.7X
+write varchar with length 5                        6868           6878          14          5.8         171.7       0.9X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 10:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 10                        3209           3214           6          6.2         160.5       1.0X
+write char with length 10                          5946           5992          76          3.4         297.3       0.5X
+write varchar with length 10                       3496           3514          18          5.7         174.8       0.9X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 20:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 20                        1701           1704           4          5.9         170.1       1.0X
+write char with length 20                          4598           4600           2          2.2         459.8       0.4X
+write varchar with length 20                       1851           1854           4          5.4         185.1       0.9X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 40:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 40                         864            868           5          5.8         172.7       1.0X
+write char with length 40                          3482           3494          15          1.4         696.4       0.2X
+write varchar with length 40                        983           1002          17          5.1         196.7       0.9X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 60:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 60                         625            629           7          5.3         187.4       1.0X
+write char with length 60                          3217           3227          15          1.0         965.1       0.2X
+write varchar with length 60                        693            699           8          4.8         208.0       0.9X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 80:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 80                         483            486           2          5.2         193.3       1.0X
+write char with length 80                          3032           3036           4          0.8        1212.8       0.2X
+write varchar with length 80                        505            512           5          4.9         202.1       1.0X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 100:                    Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 100                        409            430          30          4.9         204.3       1.0X
+write char with length 100                         2915           2945          41          0.7        1457.4       0.1X
+write varchar with length 100                       423            430          11          4.7         211.7       1.0X
+
+
+================================================================================================
+Char Varchar Write Side Perf w/ Tailing Spaces
+================================================================================================
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 5:                      Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 5                         8099           8131          28          4.9         202.5       1.0X
+write char with length 5                          10486          10511          23          3.8         262.1       0.8X
+write varchar with length 5                       10656          10711          68          3.8         266.4       0.8X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 10:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 10                        4834           4844          14          4.1         241.7       1.0X
+write char with length 10                          6757           6795          44          3.0         337.8       0.7X
+write varchar with length 10                       6773           6816          38          3.0         338.6       0.7X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 20:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 20                        3028           3041          13          3.3         302.8       1.0X
+write char with length 20                          4762           4766           4          2.1         476.2       0.6X
+write varchar with length 20                       4813           4817           6          2.1         481.3       0.6X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 40:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 40                        1958           1966          11          2.6         391.6       1.0X
+write char with length 40                          3628           3635           8          1.4         725.6       0.5X
+write varchar with length 40                       3658           3667          14          1.4         731.6       0.5X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 60:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 60                        1692           1697           5          2.0         507.7       1.0X
+write char with length 60                          3372           3389          16          1.0        1011.6       0.5X
+write varchar with length 60                       3361           3367           7          1.0        1008.3       0.5X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 80:                     Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 80                        1533           1549          24          1.6         613.1       1.0X
+write char with length 80                          3168           3176          10          0.8        1267.0       0.5X
+write varchar with length 80                       3240           3245           9          0.8        1296.0       0.5X
+
+OpenJDK 64-Bit Server VM 17.0.10+7-LTS on Linux 6.5.0-1016-azure
+AMD EPYC 7763 64-Core Processor
+Write with length 100:                    Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative
+------------------------------------------------------------------------------------------------------------------------
+write string with length 100                       1436           1438           4          1.4         717.9       1.0X
+write char with length 100                         3200           3206           5          0.6        1599.9       0.4X
+write varchar with length 100                      3154           3178          28          0.6        1577.2       0.5X
+
+
