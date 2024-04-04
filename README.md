@@ -13,3 +13,6 @@ Whenever something piques my interest, I delve into it for fun or to apply what 
 3. boto
     - botocore
     - boto3
+4. pandas
+5. numpy
+6. cpython
